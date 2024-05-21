@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\DOCDOCUMENTO;
+use App\Models\PROPROCESO;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use App\Http\Requests\DOCDOCUMENTORequest;
@@ -28,8 +29,8 @@ class DOCDOCUMENTOController extends Controller
     public function create(): View
     {
         $dOCDOCUMENTO = new DOCDOCUMENTO();
-
-        return view('doc_documento.create', compact('dOCDOCUMENTO'));
+        $procesos = PROPROCESO::all();
+        return view('doc_documento.create', compact('dOCDOCUMENTO','procesos'));
     }
 
     /**
