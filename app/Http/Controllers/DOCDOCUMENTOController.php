@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Models\DOCDOCUMENTO;
 use App\Models\PROPROCESO;
+use App\Models\DOCDOCUMENTO;
+
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use App\Http\Requests\DOCDOCUMENTORequest;
