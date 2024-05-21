@@ -20,6 +20,9 @@ class ProProcesoController extends Controller
 
         return ProProcesoResource::collection($proProcesos);
     }
+    public function getProcesos(){
+        return PROPROCESO::all();
+    }
 
     /**
      * Store a newly created resource in storage.
